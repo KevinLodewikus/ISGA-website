@@ -9,6 +9,7 @@ body{
     height: 667px;
     width: 375px;
     background-color: rgb(40, 40, 40);
+    z-index: -2;
 }
 
 li {
@@ -30,7 +31,7 @@ p {
 
 nav {
     background-color: #000000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     position: relative;
 }
@@ -45,6 +46,32 @@ h2 {
     color: #fefefe;
     font-family: poppins;
     font-size: 20px;
+}
+
+h3 {
+  color: #fefefe;
+  font-family: poppins;
+  font-size: 15px;
+  text-align: center;
+}
+
+.opentekst {
+  background-color: #000000;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.overloop{
+  margin-top: 165px;
+  padding-top: 50px;
+  width: 375px;
+  position: absolute;
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 }
 
 .dropbtn {
@@ -107,12 +134,14 @@ h2 {
 
   video {
     max-width: 375px;
+    box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.9);
   }
 
   .welcometekst {
-    width: 375px;
+    width: 325px;
     position: absolute;
-    padding-top: 40px;
+    padding-top: 50px;
+    padding-left: 30px;
   }
 
   .roodrondje {
@@ -123,16 +152,18 @@ h2 {
   .blauwrondje {
     position: absolute;
     width: 20%;
-    padding-left: 90%;
+    padding-left: 80%;
   }
 
-  .flex1{
+  .flexbox{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     display: flex;
     background-color: #f3f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .flex1 > section:nth-child(1){
+  .flexbox > section:nth-child(1){
     padding-left: 50px;
     padding-top: 25px;
       }
@@ -147,7 +178,8 @@ h2 {
   position: absolute;
   width: 375px;
   height: 92px;
-
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
       .knopdag {
@@ -169,6 +201,8 @@ background-color: #ee2e2e;
   z-index: -1;
   position: absolute;
   width: 375px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .knopvak {
@@ -176,19 +210,21 @@ background-color: #ee2e2e;
     padding-left: 90px;
 }
 
-      .flex2{
+      .flexbox2{
         display: flex;
         background-color: #000000;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.9);
         padding-bottom: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
       }
     
-.flex2 > section:nth-child(1){
+.flexbox2 > section:nth-child(1){
     padding-top: 20px;
     z-index: 1;
 }
 
-      .flex2 > section:nth-child(2){
+      .flexbox2 > section:nth-child(2){
         padding-left: 50px;
         padding-top: 25px;
           }
@@ -205,7 +241,7 @@ background-color: #ee2e2e;
               margin: 4px 2px;
               cursor: pointer;
               border-radius: 30px;
-              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.9);
             }
 
             .mainknop2 {
@@ -214,6 +250,8 @@ background-color: #ee2e2e;
               position: absolute;
               width: 375px;
               height: 92px;
+              border-bottom-left-radius: 15px;
+              border-bottom-right-radius: 15px;
             
             }
 
@@ -221,6 +259,8 @@ background-color: #ee2e2e;
               z-index: -1;
               position: absolute;
               width: 375px;
+              border-bottom-left-radius: 15px;
+              border-bottom-right-radius: 15px;
             }
             
             .knopvak2 {
@@ -233,17 +273,95 @@ background-color: #ee2e2e;
                 padding-top: 10px;
                 display: flex;
                 z-index: 1;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.9);
             }
 
             .footerlogo {
                 max-width: 125px;
                 margin: 30px;
-                padding-top: 10px;
+                padding-top: 20px;
             }
 
             iframe {
                 position: absolute;
                 width: 375px;
-                height: 667px;
+                height: 630px;
+                padding-top: 25px;
             }
+
+            .flex1 {
+              z-index: 3;
+              display: flex;
+              background-color: #ee2e2e;
+              box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.9);
+              border-top-left-radius: 15px;
+              border-top-right-radius: 15px;
+            }
+
+            .flex1>section {
+              text-align: center;
+              padding-left: 100px;
+            }
+
+            .map1 {
+              z-index: 1;
+              position: relative;
+              width: 375px;
+              height: 250px;
+              border: 0px;
+              border-bottom-left-radius: 15px;
+              border-bottom-right-radius: 15px;
+              margin-bottom: 10px;
+              padding-top: 0px;
+            }
+
+            .flex2 {
+              display: flex;
+              background-color: #1d68da;
+              box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.9);
+              border-top-left-radius: 15px;
+              border-top-right-radius: 15px;
+            }
+
+            .flex2>section {
+              text-align: center;
+              padding-left: 85px;
+            }
+
+            .flex3 {
+              display: flex;
+              padding-left: 15px;
+              padding-right: 15px;
+              text-align: center;
+              background-color: #000000;
+              border-bottom-left-radius: 15px;
+              border-bottom-right-radius: 15px;
+              margin-bottom: 10px;
+            }
+
+      .populair{
+        display: flex;
+        background-color: #000000;
+        padding-bottom: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    
+.populair > section:nth-child(1){
+    padding-top: 50px;
+    padding-left: 30px;
+    z-index: 1;
+}
+
+      .populair > section:nth-child(2){
+        padding-left: 50px;
+        padding-right: 10px;
+          }
+
+.opvul {
+  padding-top: 20px;
+}
+
+.schaduw {
+  box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.9);
+}
